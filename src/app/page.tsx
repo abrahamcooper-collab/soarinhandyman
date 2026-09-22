@@ -14,7 +14,7 @@ const services = [
     title: "Ceiling Fan Installation & Replacement",
     description:
       "Professional installation and replacement of ceiling fans for improved comfort and style.",
-    image: "/images/ceiling-fans/ceiling-fan-installation.png",
+    image: "/images/ceiling-fans/ceiling-fan-vent-installation.jpg",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
@@ -34,7 +34,7 @@ const services = [
     title: "Drywall Repair",
     description:
       "Repair holes, cracks, dents, and damaged drywall with a clean, finished appearance.",
-    image: "/images/drywall-repairs/drywall-repair-process.png",
+    image: "/images/drywall-repairs/drywall-patch-repair.jpg",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M18.37 2.63 14 7l-1.59-1.59a2 2 0 0 0-2.82 0L8 7l9 9 1.59-1.59a2 2 0 0 0 0-2.82L17 10l4.37-4.37a2.12 2.12 0 1 0-3-3Z" />
@@ -48,7 +48,7 @@ const services = [
     title: "Caulking",
     description:
       "Refresh worn or damaged caulking around bathrooms, kitchens, windows, and other surfaces.",
-    image: "/images/caulking/bathroom-caulking.png",
+    image: "/images/caulking/window-caulking-installation.jpg",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
@@ -60,7 +60,7 @@ const services = [
     title: "Faucet Replacement",
     description:
       "Upgrade or replace kitchen and bathroom faucets with professional, leak-free installation.",
-    image: "/images/faucet-replacement/kitchen-faucet-install.png",
+    image: "/images/faucet-replacement/commercial-sink-faucet-plumbing.jpg",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 2v6" />
@@ -76,7 +76,7 @@ const services = [
     title: "Interior & Exterior Painting",
     description:
       "Fresh coats of paint for interior walls, trim, and exterior surfaces with clean, professional results.",
-    image: "/images/painting/interior-painting.png",
+    image: "/images/painting/exterior-stucco-entry-painting.jpg",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="2" width="20" height="10" rx="2" />
@@ -92,7 +92,7 @@ const services = [
     title: "Bathroom Grab Bars",
     description:
       "Secure installation of safety grab bars for bathrooms, providing added support and accessibility.",
-    image: "/images/bathroom-grab-bars/grab-bar-installed.png",
+    image: "/images/bathroom-grab-bars/grab-bar-marble-shower.jpg",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M4 22V4c0-1 1-2 2-2h12c1 0 2 1 2 2v18" />
@@ -347,11 +347,10 @@ export default function Home() {
             <div className="relative">
               <div className="relative h-[400px] sm:h-[480px] lg:h-[500px] w-full overflow-hidden rounded-sm">
                 <Image
-                  src="https://images.pexels.com/photos/5691550/pexels-photo-5691550.jpeg?auto=compress&cs=tinysrgb&w=1000"
-                  alt="Handyman carefully working in a home"
+                  src="/images/general/soarin-owner-handyman.jpg"
+                  alt="Soarin Handyman Services owner ready for home repair projects"
                   fill
-                  className="object-cover"
-                  unoptimized
+                  className="object-cover object-top"
                 />
               </div>
 

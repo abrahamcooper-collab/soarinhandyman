@@ -93,6 +93,40 @@ export default async function ServiceDetailPage({ params }: Props) {
         </div>
       </section>
 
+      {/* Real Project Photo Gallery Section */}
+      {service.gallery && service.gallery.length > 0 && (
+        <section className="py-16 md:py-20 px-6 md:px-12 lg:px-16 bg-[#F9F8F6] border-b border-[#E5DFD5]">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-10">
+              <p className="text-xs uppercase tracking-[0.25em] text-[#C9A84C] font-semibold mb-2">
+                OUR REAL WORK
+              </p>
+              <h3 className="font-serif text-3xl sm:text-4xl text-[#1C1C1A] font-normal mb-3">
+                Recent {service.name} Projects ({service.gallery.length} Photos)
+              </h3>
+              <div className="w-12 h-[1px] bg-[#C9A84C] mx-auto" />
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {service.gallery.map((imgUrl, idx) => (
+                <div
+                  key={idx}
+                  className="relative h-64 sm:h-72 rounded-lg overflow-hidden border border-[#E5DFD5] shadow-xs group bg-stone-200"
+                >
+                  <Image
+                    src={imgUrl}
+                    alt={`${service.name} project photo ${idx + 1}`}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300" />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Benefits & Common Problems & Included Grid */}
       <section className="py-20 px-6 md:px-12 lg:px-16 bg-[#FAF7F0]">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">

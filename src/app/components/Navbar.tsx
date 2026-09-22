@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { servicesData, serviceAreasData } from "../data/servicesAndAreas";
 
@@ -27,18 +28,16 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 z-10">
-          <span
-            className={`font-serif text-2xl font-medium transition-colors duration-300 ${
-              scrolled ? "text-[#1C1C1A]" : "text-white"
-            }`}
-          >
-            Soarin
-          </span>
-          <span className="text-[#C9A84C] text-[10px] font-semibold tracking-[0.25em] uppercase">
-            Handyman
-          </span>
+        {/* Logo Image & Text */}
+        <Link href="/" className="flex items-center gap-3 z-10 group">
+          <Image
+            src="/logo.png"
+            alt="Soarin Handyman Services, LLC"
+            width={160}
+            height={50}
+            className="h-9 sm:h-10 w-auto object-contain"
+            priority
+          />
         </Link>
 
         {/* Desktop Navigation Links */}

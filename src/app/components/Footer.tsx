@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const googleMapsUrl =
   "https://www.google.com/maps/place/Soarin+Handyman+Services,+Llc/@26.5874184,-81.9571966,17z/data=!3m1!4b1!4m6!3m5!1s0x88db474b895eaaab:0x2b90686f1d88a466!8m2!3d26.5874184!4d-81.9571966!16s%2Fg%2F11h7v7p787?hl=en&entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D";
@@ -34,12 +35,13 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="group block mb-4"
             >
-              <span className="font-serif text-2xl text-white group-hover:text-[#C9A84C] transition-colors">
-                Soarin{" "}
-              </span>
-              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#C9A84C]">
-                HANDYMAN SERVICES, LLC
-              </span>
+              <Image
+                src="/logo.png"
+                alt="Soarin Handyman Services, LLC"
+                width={180}
+                height={55}
+                className="h-10 w-auto object-contain"
+              />
             </a>
             <p className="text-stone-400 text-sm leading-relaxed">
               Professional home repairs, installations, and improvements throughout
@@ -169,9 +171,23 @@ export default function Footer() {
         </div>
 
         {/* Bottom Sub-Footer Bar */}
-        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-xs text-stone-400 gap-4">
+        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center text-xs text-stone-400 gap-4">
           <p>© {new Date().getFullYear()} Soarin Handyman Services, LLC. All rights reserved.</p>
-          <p>Licensed & insured handyman services for Southwest Florida.</p>
+          <div className="flex items-center gap-4">
+            <p>Licensed & insured handyman services for Southwest Florida.</p>
+            <span className="hidden sm:inline text-stone-600">•</span>
+            <p className="text-xs">
+              Built by{" "}
+              <a
+                href="https://upscalers.us"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-white hover:text-[#C9A84C] transition-colors"
+              >
+                Upscalers
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

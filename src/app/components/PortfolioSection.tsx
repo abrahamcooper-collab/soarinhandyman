@@ -12,67 +12,58 @@ export interface PortfolioItem {
 
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: "Ceiling Fan Installation",
+    title: "Sink & Faucet Plumbing Installation",
     category: "installations",
-    image:
-      "https://images.pexels.com/photos/6474129/pexels-photo-6474129.jpeg?auto=compress&cs=tinysrgb&w=800",
-    description: "Professional ceiling fan installation with secure mounting.",
+    image: "/images/faucet-replacement/commercial-sink-faucet-plumbing.jpg",
+    description: "Professional sink, faucet, and drain line plumbing installation.",
   },
   {
-    title: "Drywall Repair & Patching",
+    title: "Wall Anchor Hole Patching & Spackling",
     category: "repairs",
-    image:
-      "https://images.pexels.com/photos/11427055/pexels-photo-11427055.jpeg?auto=compress&cs=tinysrgb&w=800",
-    description: "Seamless drywall patch and texture match.",
+    image: "/images/drywall-repairs/drywall-anchor-hole-spackle.jpg",
+    description: "Detailed wall anchor hole spackling, drywall repair, and surface sanding.",
   },
   {
-    title: "Faucet Replacement",
+    title: "Marble Shower Safety Grab Bar",
     category: "installations",
-    image:
-      "https://images.pexels.com/photos/12196323/pexels-photo-12196323.jpeg?auto=compress&cs=tinysrgb&w=800",
-    description: "Modern faucet installation with leak-free connections.",
+    image: "/images/bathroom-grab-bars/grab-bar-marble-shower.jpg",
+    description: "Vertical stainless steel safety grab bar securely mounted in marble tile shower.",
   },
   {
-    title: "Caulking & Sealing",
+    title: "Window Frame Sealing & Caulking",
     category: "repairs",
-    image:
-      "https://images.pexels.com/photos/6124242/pexels-photo-6124242.jpeg?auto=compress&cs=tinysrgb&w=800",
-    description: "Fresh caulk application around bathroom fixtures.",
+    image: "/images/caulking/window-caulking-installation.jpg",
+    description: "Weather-resistant window caulking bead application to prevent water intrusion.",
   },
   {
-    title: "Interior Painting & Finishing",
+    title: "Exterior Stucco Entryway Painting",
     category: "improvements",
-    image:
-      "https://images.pexels.com/photos/6474300/pexels-photo-6474300.jpeg?auto=compress&cs=tinysrgb&w=800",
-    description: "Clean interior painting and wall finishing.",
+    image: "/images/painting/exterior-stucco-entry-painting.jpg",
+    description: "Fresh exterior paint coat and trim finishing for home entryway.",
   },
   {
-    title: "Wall Repair & Sanding",
+    title: "Under-Sink Vanity Plumbing Repair",
     category: "repairs",
-    image:
-      "https://images.pexels.com/photos/6473965/pexels-photo-6473965.jpeg?auto=compress&cs=tinysrgb&w=800",
-    description: "Wall repair and surface preparation for a smooth finish.",
+    image: "/images/faucet-replacement/under-sink-plumbing-vanity.jpg",
+    description: "Under-sink vanity framing, pipe inspection, and plumbing repair.",
   },
   {
-    title: "TV Mounting",
+    title: "Bathtub & Tile Safety Rails",
     category: "installations",
-    image:
-      "https://images.pexels.com/photos/7546718/pexels-photo-7546718.jpeg?auto=compress&cs=tinysrgb&w=800",
-    description: "Secure wall-mounted TV with clean cable management.",
+    image: "/images/bathroom-grab-bars/grab-bar-bathtub-safety.jpg",
+    description: "Heavy-duty safety grab bars installed around bathtub enclosure.",
   },
   {
-    title: "Door & Hardware Repair",
-    category: "repairs",
-    image:
-      "https://images.pexels.com/photos/9051071/pexels-photo-9051071.jpeg?auto=compress&cs=tinysrgb&w=800",
-    description: "Door adjustment and hardware replacement.",
-  },
-  {
-    title: "Trim & Baseboard Installation",
+    title: "Interior Room Wall Painting",
     category: "improvements",
-    image:
-      "https://images.pexels.com/photos/7601180/pexels-photo-7601180.jpeg?auto=compress&cs=tinysrgb&w=800",
-    description: "New trim and baseboard installation with clean joints.",
+    image: "/images/painting/interior-room-painting.jpg",
+    description: "Clean interior wall painting, border taping, and trim finish.",
+  },
+  {
+    title: "Shower & Tub Tile Joint Caulking",
+    category: "repairs",
+    image: "/images/caulking/tile-joint-caulking.jpg",
+    description: "Clean silicone caulking line along tile joint boundaries.",
   },
 ];
 
@@ -136,7 +127,6 @@ export default function PortfolioSection() {
                 alt={item.title}
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
-                unoptimized
               />
               {/* Hover Dark Overlay */}
               <div className="absolute inset-0 bg-[#1C1C1A]/0 group-hover:bg-[#1C1C1A]/60 transition-all duration-300 flex items-end p-6">
@@ -153,11 +143,10 @@ export default function PortfolioSection() {
           ))}
         </div>
 
-        {/* Disclaimer Note */}
+        {/* Footer Note */}
         <div className="text-center mt-10">
           <p className="text-sm text-[#8C857B]">
-            Project photos shown are representative examples. Real project
-            photos will be added as they become available.
+            Authentic project photos from recent Soarin Handyman Services completed jobs in Southwest Florida.
           </p>
         </div>
       </div>

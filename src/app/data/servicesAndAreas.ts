@@ -5,6 +5,7 @@ export interface ServiceDetail {
   longDescription: string;
   category: "installations" | "repairs" | "improvements";
   image: string;
+  gallery: string[];
   benefits: string[];
   commonProblems: string[];
   whatIsIncluded: string[];
@@ -28,7 +29,12 @@ export const servicesData: ServiceDetail[] = [
     longDescription:
       "A properly installed ceiling fan improves airflow, reduces energy costs, and adds a finished look to any room. Whether you are replacing an outdated fan or installing one where there was none before, Soarin Handyman Services handles the full process with care — from secure mounting to clean wiring and balanced operation.",
     category: "installations",
-    image: "/images/ceiling-fans/ceiling-fan-installation.png",
+    image: "/images/ceiling-fans/ceiling-fan-vent-installation.jpg",
+    gallery: [
+      "/images/ceiling-fans/ceiling-fan-vent-installation.jpg",
+      "/images/ceiling-fans/ceiling-electrical-framing.jpg",
+      "/images/ceiling-fans/ceiling-fan-services-showcase.jpg",
+    ],
     benefits: [
       "Improved air circulation and comfort",
       "Reduced energy costs year-round",
@@ -69,7 +75,15 @@ export const servicesData: ServiceDetail[] = [
     longDescription:
       "Damaged drywall is one of the most common issues in Southwest Florida homes — from settling cracks and doorknob holes to water stains and textured ceilings. Soarin Handyman Services patches, blends, and finishes drywall so the repair disappears into the surrounding wall.",
     category: "repairs",
-    image: "/images/drywall-repairs/drywall-repair-process.png",
+    image: "/images/drywall-repairs/drywall-patch-repair.jpg",
+    gallery: [
+      "/images/drywall-repairs/drywall-patch-repair.jpg",
+      "/images/drywall-repairs/drywall-anchor-hole-spackle.jpg",
+      "/images/drywall-repairs/drywall-room-hole-patching.jpg",
+      "/images/drywall-repairs/drywall-framing-insulation-repair.jpg",
+      "/images/drywall-repairs/drywall-room-patching.jpg",
+      "/images/drywall-repairs/drywall-water-damage-drying.jpg",
+    ],
     benefits: [
       "Seamless patches that blend with surrounding walls",
       "Texture matching for popcorn, knockdown, or smooth ceilings",
@@ -110,7 +124,13 @@ export const servicesData: ServiceDetail[] = [
     longDescription:
       "Caulking is a small detail with a big impact. Worn or missing caulk leads to water damage, drafts, and an unkempt appearance. Soarin Handyman Services removes old caulk and applies fresh, clean beads that protect your home and look sharp.",
     category: "repairs",
-    image: "/images/caulking/bathroom-caulking.png",
+    image: "/images/caulking/window-caulking-installation.jpg",
+    gallery: [
+      "/images/caulking/window-caulking-installation.jpg",
+      "/images/caulking/window-frame-sealing.jpg",
+      "/images/caulking/bathroom-shower-caulking.jpg",
+      "/images/caulking/tile-joint-caulking.jpg",
+    ],
     benefits: [
       "Prevents water intrusion and moisture damage",
       "Improves energy efficiency by sealing gaps",
@@ -146,7 +166,14 @@ export const servicesData: ServiceDetail[] = [
     longDescription:
       "A new faucet can transform the look of a kitchen or bathroom, but proper installation matters. Soarin Handyman Services removes old faucets, prepares the surface, and installs new fixtures with secure connections and clean finishes.",
     category: "installations",
-    image: "/images/faucet-replacement/kitchen-faucet-install.png",
+    image: "/images/faucet-replacement/commercial-sink-faucet-plumbing.jpg",
+    gallery: [
+      "/images/faucet-replacement/commercial-sink-faucet-plumbing.jpg",
+      "/images/faucet-replacement/under-sink-plumbing-vanity.jpg",
+      "/images/faucet-replacement/bathroom-vanity-faucet-installation.jpg",
+      "/images/faucet-replacement/bathroom-faucet-shower-fixture.jpg",
+      "/images/faucet-replacement/water-heater-plumbing-install.jpg",
+    ],
     benefits: [
       "Updated look for kitchens and bathrooms",
       "Secure, leak-free connections",
@@ -187,7 +214,15 @@ export const servicesData: ServiceDetail[] = [
     longDescription:
       "Painting is one of the fastest ways to revitalize a room or exterior trim. Soarin Handyman Services provides careful surface preparation, clean taping, and smooth paint application so your walls look vibrant and flawlessly finished.",
     category: "improvements",
-    image: "/images/painting/interior-painting.png",
+    image: "/images/painting/exterior-stucco-entry-painting.jpg",
+    gallery: [
+      "/images/painting/exterior-stucco-entry-painting.jpg",
+      "/images/painting/exterior-front-door-painting.jpg",
+      "/images/painting/interior-room-painting.jpg",
+      "/images/painting/exterior-wall-stucco-repair.jpg",
+      "/images/painting/exterior-patio-stucco-painting.jpg",
+      "/images/painting/exterior-balcony-trim-painting.jpg",
+    ],
     benefits: [
       "Refreshed appearance for interior and exterior spaces",
       "Thorough surface preparation for long-lasting adhesion",
@@ -221,7 +256,16 @@ export const servicesData: ServiceDetail[] = [
     longDescription:
       "Properly installed grab bars provide essential safety and support in showers, bathtubs, and near toilets. Soarin Handyman Services ensures solid anchor mounting into wall studs or heavy-duty anchors so you can feel completely confident and safe.",
     category: "installations",
-    image: "/images/bathroom-grab-bars/grab-bar-installed.png",
+    image: "/images/bathroom-grab-bars/grab-bar-marble-shower.jpg",
+    gallery: [
+      "/images/bathroom-grab-bars/grab-bar-marble-shower.jpg",
+      "/images/bathroom-grab-bars/grab-bar-vertical-install.jpg",
+      "/images/bathroom-grab-bars/grab-bar-horizontal-tile.jpg",
+      "/images/bathroom-grab-bars/grab-bar-bathtub-safety.jpg",
+      "/images/bathroom-grab-bars/grab-bar-tub-wall-enclosure.jpg",
+      "/images/bathroom-grab-bars/grab-bar-tub-wall.jpg",
+      "/images/bathroom-grab-bars/grab-bar-bathroom-accessibility.jpg",
+    ],
     benefits: [
       "Enhanced safety and fall prevention in wet areas",
       "Anchor mounting into wall studs or solid masonry",
