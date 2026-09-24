@@ -103,11 +103,10 @@ export default function PortfolioSection() {
               <button
                 key={cat.value}
                 onClick={() => setActiveFilter(cat.value)}
-                className={`px-4 py-2 text-sm font-medium rounded-sm transition-all duration-200 ${
-                  activeFilter === cat.value
+                className={`px-4 py-2 text-sm font-medium rounded-sm transition-all duration-200 ${activeFilter === cat.value
                     ? "bg-[#1C1C1A] text-white shadow-xs"
                     : "text-[#6B6B6B] hover:text-[#1C1C1A] hover:bg-[#F9F8F6]"
-                }`}
+                  }`}
               >
                 {cat.label}
               </button>
