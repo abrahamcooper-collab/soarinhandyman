@@ -7,10 +7,10 @@ const googleMapsUrl =
 const services = [
   { name: "Ceiling Fan Installation & Replacement", slug: "ceiling-fans" },
   { name: "Drywall Repair", slug: "drywall-repair" },
-  { name: "Caulking", slug: "caulking" },
-  { name: "Faucet Replacement", slug: "faucet-replacement" },
+  { name: "Hurricane Shutter Repair", slug: "hurricane-shutter-repair" },
+  { name: "Outdoor Miscellaneous Work", slug: "outdoor-miscellaneous-work" },
   { name: "Interior & Exterior Painting", slug: "painting" },
-  { name: "Bathroom Grab Bars", slug: "bathroom-grab-bars" },
+  { name: "Bathroom Services", slug: "bathroom" },
 ];
 
 const serviceAreas = [
@@ -38,15 +38,33 @@ export default function Footer() {
               <Image
                 src="/logo.png"
                 alt="Soarin Handyman Services, LLC"
-                width={180}
-                height={55}
-                className="h-10 w-auto object-contain"
+                width={240}
+                height={75}
+                className="h-14 sm:h-16 w-auto object-contain"
               />
             </a>
-            <p className="text-stone-400 text-sm leading-relaxed">
+            <p className="text-stone-400 text-sm leading-relaxed mb-4">
               Professional home repairs, installations, and improvements throughout
               Southwest Florida.
             </p>
+            <a
+              href="https://facebook.com/SoarinHandymanServices"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm text-stone-300 hover:text-[#C9A84C] transition-colors group"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="text-[#1877F2] shrink-0 group-hover:scale-110 transition-transform"
+              >
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+              <span className="font-medium">Follow on Facebook</span>
+            </a>
           </div>
 
           {/* Col 2: Services */}
@@ -136,6 +154,26 @@ export default function Footer() {
                     <polyline points="22,6 12,13 2,6" />
                   </svg>
                   rdhoneycutt2@gmail.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://facebook.com/SoarinHandymanServices"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2.5 text-sm text-stone-400 hover:text-[#C9A84C] transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="shrink-0 text-[#1877F2]"
+                  >
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                  </svg>
+                  Facebook Page
                 </a>
               </li>
               <li className="flex items-center gap-2.5 text-sm text-stone-400">

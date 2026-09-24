@@ -12,28 +12,28 @@ export interface PortfolioItem {
 
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: "Sink & Faucet Plumbing Installation",
+    title: "Bathroom Vanity & Faucet Installation",
     category: "installations",
-    image: "/images/faucet-replacement/commercial-sink-faucet-plumbing.jpg",
-    description: "Professional sink, faucet, and drain line plumbing installation.",
+    image: "/images/Bathroom/bathroom-vanity-faucet-installation.jpg",
+    description: "Professional vanity cabinet and faucet plumbing installation.",
   },
   {
-    title: "Wall Anchor Hole Patching & Spackling",
+    title: "Drywall Patch & Smooth Finish",
     category: "repairs",
-    image: "/images/drywall-repairs/drywall-anchor-hole-spackle.jpg",
-    description: "Detailed wall anchor hole spackling, drywall repair, and surface sanding.",
+    image: "/images/drywall-repairs/drywall-patch-repair.jpg",
+    description: "Seamless drywall patching, mud, and texture-matched finish.",
   },
   {
     title: "Marble Shower Safety Grab Bar",
     category: "installations",
-    image: "/images/bathroom-grab-bars/grab-bar-marble-shower.jpg",
+    image: "/images/Bathroom/grab-bar-marble-shower.jpg",
     description: "Vertical stainless steel safety grab bar securely mounted in marble tile shower.",
   },
   {
-    title: "Window Frame Sealing & Caulking",
+    title: "Hurricane Shutter Track Repair",
     category: "repairs",
-    image: "/images/caulking/window-caulking-installation.jpg",
-    description: "Weather-resistant window caulking bead application to prevent water intrusion.",
+    image: "/images/hurricane Shutter Repair/d0578b9601f5e5dce3d6a8fe3fa46c56c088db62-1.jfif",
+    description: "Storm shutter track alignment, lubrication, and hardware repair.",
   },
   {
     title: "Exterior Stucco Entryway Painting",
@@ -42,16 +42,16 @@ export const portfolioItems: PortfolioItem[] = [
     description: "Fresh exterior paint coat and trim finishing for home entryway.",
   },
   {
-    title: "Under-Sink Vanity Plumbing Repair",
-    category: "repairs",
-    image: "/images/faucet-replacement/under-sink-plumbing-vanity.jpg",
-    description: "Under-sink vanity framing, pipe inspection, and plumbing repair.",
+    title: "Ceiling Fan Replacement",
+    category: "installations",
+    image: "/images/ceiling-fans/d9275cf93595b294e021c6a02d41a94f3546fb76-1.jfif",
+    description: "Complete ceiling fan swap with secure mounting and wiring.",
   },
   {
-    title: "Bathtub & Tile Safety Rails",
-    category: "installations",
-    image: "/images/bathroom-grab-bars/grab-bar-bathtub-safety.jpg",
-    description: "Heavy-duty safety grab bars installed around bathtub enclosure.",
+    title: "Outdoor Miscellaneous Repair",
+    category: "improvements",
+    image: "/images/Outdoor Miscellaneous work/984027b5d6755a58e07852bfb0408ac960f364f1-1.jfif",
+    description: "Fence, gate, and outdoor fixture repair and installation.",
   },
   {
     title: "Interior Room Wall Painting",
@@ -60,10 +60,10 @@ export const portfolioItems: PortfolioItem[] = [
     description: "Clean interior wall painting, border taping, and trim finish.",
   },
   {
-    title: "Shower & Tub Tile Joint Caulking",
-    category: "repairs",
-    image: "/images/caulking/tile-joint-caulking.jpg",
-    description: "Clean silicone caulking line along tile joint boundaries.",
+    title: "Bathroom Shower Grab Bar Install",
+    category: "installations",
+    image: "/images/Bathroom/grab-bar-vertical-install.jpg",
+    description: "Heavy-duty grab bar securely mounted alongside shower enclosure.",
   },
 ];
 

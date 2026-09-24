@@ -33,9 +33,9 @@ export default function Navbar() {
           <Image
             src="/logo.png"
             alt="Soarin Handyman Services, LLC"
-            width={160}
-            height={50}
-            className="h-9 sm:h-10 w-auto object-contain"
+            width={260}
+            height={80}
+            className="h-14 sm:h-16 md:h-20 max-h-20 w-auto object-contain transition-all duration-300"
             priority
           />
         </Link>

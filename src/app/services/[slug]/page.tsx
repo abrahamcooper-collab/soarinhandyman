@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import EstimateForm from "../../components/EstimateForm";
+import BeforeAfter from "../../components/BeforeAfter";
 import { servicesData } from "../../data/servicesAndAreas";
 
 export function generateStaticParams() {
@@ -92,6 +93,11 @@ export default async function ServiceDetailPage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      {/* Before & After Transformations */}
+      {service.beforeAfter && service.beforeAfter.length > 0 && (
+        <BeforeAfter pairs={service.beforeAfter} serviceName={service.name} />
+      )}
 
       {/* Real Project Photo Gallery Section */}
       {service.gallery && service.gallery.length > 0 && (

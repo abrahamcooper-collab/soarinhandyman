@@ -19,6 +19,11 @@ export const metadata: Metadata = {
   title: "Soarin Handyman Services, LLC | Handyman Cape Coral, Fort Myers, Naples",
   description:
     "Professional handyman services in Southwest Florida. Ceiling fan installation, drywall repair, caulking, faucet replacement, and home improvements. Get a free estimate today.",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -36,25 +36,6 @@ export const serviceConfigs: Record<string, ServiceOptionConfig> = {
     notes:
       "Assumes fan is provided by customer. Electrical work may require a licensed electrician.",
   },
-  "Ceiling Fan Replacement": {
-    baseLabor: 65,
-    perUnit: 55,
-    unitLabel: "Number of fans",
-    unitOptions: [
-      { label: "1 fan", value: 1 },
-      { label: "2 fans", value: 2 },
-      { label: "3 fans", value: 3 },
-    ],
-    complexityOptions: [
-      { label: "Standard replacement, existing wiring", multiplier: 1 },
-      { label: "Different mounting location", multiplier: 1.3 },
-    ],
-    materialOptions: [
-      { label: "No materials needed", cost: 0 },
-      { label: "New mounting bracket", cost: 20 },
-    ],
-    notes: "Replacement of an existing fan. Assumes wiring is already in place.",
-  },
   "Drywall Repair": {
     baseLabor: 80,
     perUnit: 45,
@@ -79,48 +60,106 @@ export const serviceConfigs: Record<string, ServiceOptionConfig> = {
     notes:
       "Estimate includes patching and finishing. Painting is additional if needed.",
   },
-  Caulking: {
-    baseLabor: 60,
-    perUnit: 3,
-    unitLabel: "Approximate linear feet",
+  "Hurricane Shutter Repair": {
+    baseLabor: 90,
+    perUnit: 40,
+    unitLabel: "Number of shutters / panels",
     unitOptions: [
-      { label: "Under 10 ft", value: 10 },
-      { label: "10–25 ft", value: 25 },
-      { label: "25–50 ft", value: 50 },
-      { label: "50+ ft", value: 75 },
+      { label: "1–2 shutters", value: 1 },
+      { label: "3–5 shutters", value: 3 },
+      { label: "6+ shutters", value: 6 },
     ],
     complexityOptions: [
-      { label: "Standard areas (sink, tub edge)", multiplier: 1 },
-      { label: "Multiple areas (bathroom + kitchen)", multiplier: 1.3 },
-      { label: "Windows or exterior areas", multiplier: 1.4 },
+      { label: "Track adjustment or lubrication", multiplier: 1 },
+      { label: "Slat replacement or panel repair", multiplier: 1.3 },
+      { label: "Motor / crank gearbox adjustment", multiplier: 1.6 },
     ],
     materialOptions: [
-      { label: "Standard silicone caulk", cost: 12 },
-      { label: "Mold-resistant caulk", cost: 18 },
-      { label: "Paintable latex caulk", cost: 10 },
+      { label: "No extra materials needed", cost: 0 },
+      { label: "Replacement hardware & fasteners", cost: 30 },
+      { label: "Heavy-duty track hardware", cost: 60 },
     ],
-    notes: "Includes removal of old caulk and surface preparation.",
+    notes: "Includes inspection of shutter tracks, alignment, and secure locking operation.",
   },
-  "Faucet Replacement": {
-    baseLabor: 85,
-    perUnit: 75,
-    unitLabel: "Number of faucets",
+  "Outdoor Miscellaneous Work": {
+    baseLabor: 80,
+    perUnit: 40,
+    unitLabel: "Estimated scope / hours",
     unitOptions: [
-      { label: "1 faucet", value: 1 },
-      { label: "2 faucets", value: 2 },
-      { label: "3 faucets", value: 3 },
+      { label: "Small job (1–2 hrs)", value: 1 },
+      { label: "Medium job (Half-day)", value: 2 },
+      { label: "Full day project", value: 4 },
     ],
     complexityOptions: [
-      { label: "Standard replacement, easy access", multiplier: 1 },
-      { label: "Tight or difficult access", multiplier: 1.3 },
-      { label: "Supply lines need replacement", multiplier: 1.4 },
+      { label: "Ground level repair / installation", multiplier: 1 },
+      { label: "Ladder access or post digging required", multiplier: 1.3 },
+      { label: "Custom fabrication or heavy lifting", multiplier: 1.6 },
+    ],
+    materialOptions: [
+      { label: "Customer provides materials", cost: 0 },
+      { label: "Basic hardware & exterior fasteners", cost: 25 },
+      { label: "Lumber / concrete / heavy materials", cost: 60 },
+    ],
+    notes: "Covers fence patch, deck repair, exterior trim, screen repair, and outdoor fixture mounting.",
+  },
+  "Gutters / Fascia Repairs": {
+    baseLabor: 85,
+    perUnit: 10,
+    unitLabel: "Approximate linear feet",
+    unitOptions: [
+      { label: "Under 15 ft", value: 15 },
+      { label: "15–30 ft", value: 30 },
+      { label: "30–60 ft", value: 60 },
+    ],
+    complexityOptions: [
+      { label: "Minor gutter seam re-seal / bracket repair", multiplier: 1 },
+      { label: "Section replacement or fascia board repair", multiplier: 1.35 },
+      { label: "Second-story height work", multiplier: 1.6 },
     ],
     materialOptions: [
       { label: "No materials needed", cost: 0 },
-      { label: "New supply lines included", cost: 20 },
-      { label: "New drain assembly", cost: 25 },
+      { label: "Sealant & heavy-duty hangers", cost: 25 },
+      { label: "Gutter section & fascia material", cost: 50 },
     ],
-    notes: "Assumes faucet is provided by customer. Water shut-off required.",
+    notes: "Includes ladder setup, safety check, and seal testing.",
+  },
+  "Shower Door Replacement": {
+    baseLabor: 120,
+    perUnit: 80,
+    unitLabel: "Number of shower doors",
+    unitOptions: [
+      { label: "1 shower door", value: 1 },
+      { label: "2 shower doors", value: 2 },
+    ],
+    complexityOptions: [
+      { label: "Framed sliding shower door replacement", multiplier: 1 },
+      { label: "Frameless heavy glass door", multiplier: 1.4 },
+      { label: "Custom tile enclosure fitting", multiplier: 1.6 },
+    ],
+    materialOptions: [
+      { label: "Customer provides shower door unit", cost: 0 },
+      { label: "Silicone sealant & hardware kit included", cost: 35 },
+    ],
+    notes: "Assumes new shower door unit is supplied by customer unless arranged in advance.",
+  },
+  "Bathroom Vanity Replacement": {
+    baseLabor: 150,
+    perUnit: 100,
+    unitLabel: "Number of vanities",
+    unitOptions: [
+      { label: "1 vanity (single sink)", value: 1 },
+      { label: "1 vanity (double sink)", value: 2 },
+    ],
+    complexityOptions: [
+      { label: "Standard freestanding vanity swap", multiplier: 1 },
+      { label: "Wall-hung / floating vanity", multiplier: 1.35 },
+      { label: "Plumbing modifications or mirror/light move required", multiplier: 1.6 },
+    ],
+    materialOptions: [
+      { label: "Customer provides vanity & faucet", cost: 0 },
+      { label: "Supply lines, p-trap & plumber's putty included", cost: 40 },
+    ],
+    notes: "Includes removal of old vanity, positioning new cabinet, and re-connecting existing plumbing lines.",
   },
   "Light Fixture Installation": {
     baseLabor: 70,
@@ -279,27 +318,27 @@ export const serviceConfigs: Record<string, ServiceOptionConfig> = {
     notes:
       "Includes wall preparation, taping, and drop cloths. Paint can be customer-supplied or provided.",
   },
-  "Bathroom Grab Bars": {
-    baseLabor: 70,
-    perUnit: 30,
-    unitLabel: "Number of grab bars",
+  Bathroom: {
+    baseLabor: 100,
+    perUnit: 50,
+    unitLabel: "Number of items / tasks",
     unitOptions: [
-      { label: "1 grab bar", value: 1 },
-      { label: "2 grab bars", value: 2 },
-      { label: "3+ grab bars", value: 3 },
+      { label: "1 task (e.g. Grab Bar)", value: 1 },
+      { label: "2 tasks", value: 2 },
+      { label: "3+ tasks (Bathroom Refresh)", value: 3 },
     ],
     complexityOptions: [
-      { label: "Standard tile / drywall mount with studs", multiplier: 1 },
-      { label: "Fiberglass or acrylic enclosure", multiplier: 1.25 },
-      { label: "Heavy-duty solid wall anchors required", multiplier: 1.4 },
+      { label: "Standard fixture or hardware swap", multiplier: 1 },
+      { label: "Tile drilling or anchor reinforcement", multiplier: 1.3 },
+      { label: "Full hardware, mirror & caulk refresh", multiplier: 1.6 },
     ],
     materialOptions: [
-      { label: "Customer provides grab bar(s)", cost: 0 },
-      { label: "Stainless steel grab bar included", cost: 35 },
-      { label: "Heavy-duty anchors included", cost: 20 },
+      { label: "Customer provides fixtures", cost: 0 },
+      { label: "Standard anchors & silicone included", cost: 25 },
+      { label: "Heavy-duty mounting hardware kit", cost: 45 },
     ],
     notes:
-      "Anchors securely into wall studs or heavy-duty anchors for safety compliance.",
+      "Covers bathroom grab bars, mirror mounting, towel rack installation, caulking, and fixture upgrades.",
   },
   Other: {
     baseLabor: 75,
@@ -322,10 +361,12 @@ export const serviceConfigs: Record<string, ServiceOptionConfig> = {
 
 export const serviceList = [
   "Ceiling Fan Installation",
-  "Ceiling Fan Replacement",
   "Drywall Repair",
-  "Caulking",
-  "Faucet Replacement",
+  "Hurricane Shutter Repair",
+  "Outdoor Miscellaneous Work",
+  "Gutters / Fascia Repairs",
+  "Shower Door Replacement",
+  "Bathroom Vanity Replacement",
   "Light Fixture Installation",
   "Door / Hardware Repair",
   "TV Mounting",
@@ -333,7 +374,7 @@ export const serviceList = [
   "Cabinet / Hardware Repair",
   "Trim / Baseboard Repair",
   "Interior / Exterior Painting",
-  "Bathroom Grab Bars",
+  "Bathroom",
   "Other",
 ];
 

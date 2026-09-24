@@ -14,7 +14,7 @@ const services = [
     title: "Ceiling Fan Installation & Replacement",
     description:
       "Professional installation and replacement of ceiling fans for improved comfort and style.",
-    image: "/images/ceiling-fans/ceiling-fan-vent-installation.jpg",
+    image: "/images/ceiling-fans/TN.jfif",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
@@ -34,7 +34,7 @@ const services = [
     title: "Drywall Repair",
     description:
       "Repair holes, cracks, dents, and damaged drywall with a clean, finished appearance.",
-    image: "/images/drywall-repairs/drywall-patch-repair.jpg",
+    image: "/images/drywall-repairs/TN.jfif",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M18.37 2.63 14 7l-1.59-1.59a2 2 0 0 0-2.82 0L8 7l9 9 1.59-1.59a2 2 0 0 0 0-2.82L17 10l4.37-4.37a2.12 2.12 0 1 0-3-3Z" />
@@ -45,38 +45,35 @@ const services = [
     slug: "drywall-repair",
   },
   {
-    title: "Caulking",
+    title: "Hurricane Shutter Repair",
     description:
-      "Refresh worn or damaged caulking around bathrooms, kitchens, windows, and other surfaces.",
-    image: "/images/caulking/window-caulking-installation.jpg",
+      "Professional hurricane shutter repair, track alignment, panel replacement, and storm readiness.",
+    image: "/images/hurricane Shutter Repair/TN.jfif",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
       </svg>
     ),
-    slug: "caulking",
+    slug: "hurricane-shutter-repair",
   },
   {
-    title: "Faucet Replacement",
+    title: "Outdoor Miscellaneous Work",
     description:
-      "Upgrade or replace kitchen and bathroom faucets with professional, leak-free installation.",
-    image: "/images/faucet-replacement/commercial-sink-faucet-plumbing.jpg",
+      "Fence repairs, deck maintenance, outdoor fixture mounting, and exterior handyman solutions.",
+    image: "/images/Outdoor Miscellaneous work/TN.jfif",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 2v6" />
-        <path d="M6 8h12" />
-        <path d="M6 8v2a6 6 0 0 0 12 0V8" />
-        <path d="M12 16v6" />
-        <path d="M8 22h8" />
+        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+        <polyline points="9 22 9 12 15 12 15 22" />
       </svg>
     ),
-    slug: "faucet-replacement",
+    slug: "outdoor-miscellaneous-work",
   },
   {
     title: "Interior & Exterior Painting",
     description:
       "Fresh coats of paint for interior walls, trim, and exterior surfaces with clean, professional results.",
-    image: "/images/painting/exterior-stucco-entry-painting.jpg",
+    image: "/images/painting/TN.jfif",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="2" width="20" height="10" rx="2" />
@@ -89,10 +86,10 @@ const services = [
     slug: "painting",
   },
   {
-    title: "Bathroom Grab Bars",
+    title: "Bathroom Services",
     description:
-      "Secure installation of safety grab bars for bathrooms, providing added support and accessibility.",
-    image: "/images/bathroom-grab-bars/grab-bar-marble-shower.jpg",
+      "Vanity replacements, shower door installations, grab bar mounting, and complete bathroom upgrades.",
+    image: "/images/Bathroom/TN.jfif",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M4 22V4c0-1 1-2 2-2h12c1 0 2 1 2 2v18" />
@@ -104,7 +101,7 @@ const services = [
         <path d="M8 18h8" />
       </svg>
     ),
-    slug: "bathroom-grab-bars",
+    slug: "bathroom",
   },
 ];
 
@@ -136,22 +133,27 @@ export default function Home() {
         {/* Hero Content */}
         <div className="relative z-10 flex-1 flex items-center px-6 md:px-12 lg:px-16 pb-20">
           <div className="max-w-7xl mx-auto w-full">
-            <div className="max-w-xl">
-              {/* Subtitle */}
-              <p className="text-[#C9A84C] text-xs font-medium tracking-[0.2em] uppercase mb-6">
-                Southwest Florida Handyman Services
-              </p>
-
-              {/* Heading */}
-              <h1 className="font-serif text-white text-5xl md:text-6xl lg:text-[64px] leading-[1.1] font-normal mb-6">
-                Exceptional Handyman
-                <br />
-                Work.{" "}
-                <span className="text-[#C9A84C] italic">Done Right.</span>
+            <div className="max-w-3xl">
+              {/* Business Name (Enlarged Heading) */}
+              <h1 className="mb-4">
+                <a
+                  href="https://www.google.com/maps/place/Soarin+Handyman+Services,+Llc/@26.5874184,-81.9571966,17z/data=!3m1!4b1!4m6!3m5!1s0x88db474b895eaaab:0x2b90686f1d88a466!8m2!3d26.5874184!4d-81.9571966!16s%2Fg%2F11h7v7p787?hl=en&entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-serif text-white hover:text-[#E6D4A6] text-4xl sm:text-5xl md:text-6xl lg:text-[62px] leading-[1.1] font-normal tracking-tight transition-colors block"
+                >
+                  <span className="text-[#C9A84C]">Soarin Handyman Services, LLC</span>
+                </a>
               </h1>
 
+              {/* Tagline (Decreased Size) */}
+              <p className="font-serif text-xl sm:text-2xl md:text-3xl text-stone-200 font-light leading-snug mb-6">
+                Exceptional Handyman Work.{" "}
+                <span className="text-[#C9A84C] italic font-normal">Done Right.</span>
+              </p>
+
               {/* Description */}
-              <p className="text-white/80 text-base leading-relaxed max-w-md mb-10">
+              <p className="text-white/80 text-base leading-relaxed max-w-lg mb-10">
                 Professional home repairs, installations, and improvements
                 throughout Southwest Florida — with careful workmanship, clear
                 communication, and attention to detail.
@@ -590,36 +592,148 @@ export default function Home() {
           {/* Header */}
           <div className="text-center mb-14">
             <p className="text-xs uppercase tracking-[0.25em] text-[#C9A84C] font-semibold mb-3">
-              TESTIMONIALS
+              GOOGLE REVIEWS & TESTIMONIALS
             </p>
             <h2 className="font-serif text-4xl lg:text-5xl text-[#1C1C1A] mb-4 font-normal">
-              Trusted by Homeowners
+              Trusted by Southwest Florida Homeowners
             </h2>
+            <div className="flex items-center justify-center gap-2 mb-3">
+              <div className="flex text-[#C9A84C]">
+                {[...Array(5)].map((_, i) => (
+                  <svg
+                    key={i}
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="#C9A84C"
+                    stroke="none"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                ))}
+              </div>
+              <span className="text-sm font-semibold text-[#1C1C1A]">5.0 Star Rated on Google</span>
+            </div>
             <div className="w-12 h-[1px] bg-[#C9A84C] mx-auto" />
           </div>
 
-          {/* Placeholder Review Box */}
-          <div className="text-center max-w-md mx-auto py-10">
-            <div className="inline-flex items-center justify-center w-14 h-14 bg-[#F3ECE0] rounded-full mb-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="26"
-                height="26"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#6B6B6B"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-              </svg>
+          {/* Testimonial Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Card 1 */}
+            <div className="bg-white p-8 rounded-lg border border-[#E5DFD5] shadow-xs flex flex-col justify-between hover:shadow-md transition-shadow">
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex text-[#C9A84C]">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#C9A84C" stroke="none">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                      </svg>
+                    ))}
+                  </div>
+                  <span className="text-[11px] font-semibold text-[#1877F2] bg-blue-50 px-2.5 py-0.5 rounded-full flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                      <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                      <path d="M5.84 14.1c-.22-.66-.35-1.36-.35-2.1s.13-1.44.35-2.1V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                      <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"/>
+                    </svg>
+                    Google Review
+                  </span>
+                </div>
+                <p className="text-[#4A4A4A] text-sm leading-relaxed mb-6 italic">
+                  &ldquo;Robert did an outstanding job on our ceiling fan installation and drywall patch repair. Arrived right on time, explained everything clearly, and left the room spotless. Highly recommend Soarin Handyman Services!&rdquo;
+                </p>
+              </div>
+              <div className="pt-4 border-t border-[#E5DFD5]/60 flex items-center justify-between">
+                <div>
+                  <p className="font-serif text-[#1C1C1A] text-base font-normal">Michael S.</p>
+                  <p className="text-xs text-[#8C857B]">Cape Coral, FL</p>
+                </div>
+                <span className="text-xs text-[#C9A84C] font-semibold">Verified Client</span>
+              </div>
             </div>
-            <p className="text-[#6B6B6B] text-sm leading-relaxed">
-              Customer reviews will appear here once available. If you have
-              worked with Soarin Handyman Services, we would love to hear about
-              your experience.
-            </p>
+
+            {/* Card 2 */}
+            <div className="bg-white p-8 rounded-lg border border-[#E5DFD5] shadow-xs flex flex-col justify-between hover:shadow-md transition-shadow">
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex text-[#C9A84C]">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#C9A84C" stroke="none">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                      </svg>
+                    ))}
+                  </div>
+                  <span className="text-[11px] font-semibold text-[#1877F2] bg-blue-50 px-2.5 py-0.5 rounded-full flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                      <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                      <path d="M5.84 14.1c-.22-.66-.35-1.36-.35-2.1s.13-1.44.35-2.1V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                      <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"/>
+                    </svg>
+                    Google Review
+                  </span>
+                </div>
+                <p className="text-[#4A4A4A] text-sm leading-relaxed mb-6 italic">
+                  &ldquo;Extremely meticulous work! Installed bathroom grab bars through marble tile seamlessly and fixed our storm shutters before hurricane season. Honest pricing and fantastic communication.&rdquo;
+                </p>
+              </div>
+              <div className="pt-4 border-t border-[#E5DFD5]/60 flex items-center justify-between">
+                <div>
+                  <p className="font-serif text-[#1C1C1A] text-base font-normal">Deborah K.</p>
+                  <p className="text-xs text-[#8C857B]">Fort Myers, FL</p>
+                </div>
+                <span className="text-xs text-[#C9A84C] font-semibold">Verified Client</span>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-white p-8 rounded-lg border border-[#E5DFD5] shadow-xs flex flex-col justify-between hover:shadow-md transition-shadow">
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex text-[#C9A84C]">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#C9A84C" stroke="none">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                      </svg>
+                    ))}
+                  </div>
+                  <span className="text-[11px] font-semibold text-[#1877F2] bg-blue-50 px-2.5 py-0.5 rounded-full flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                      <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                      <path d="M5.84 14.1c-.22-.66-.35-1.36-.35-2.1s.13-1.44.35-2.1V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                      <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"/>
+                    </svg>
+                    Google Review
+                  </span>
+                </div>
+                <p className="text-[#4A4A4A] text-sm leading-relaxed mb-6 italic">
+                  &ldquo;Soarin Handyman replaced our bathroom vanity and painted our exterior entryway. Professional from start to finish. It&apos;s rare to find craftsmen this reliable in SWFL!&rdquo;
+                </p>
+              </div>
+              <div className="pt-4 border-t border-[#E5DFD5]/60 flex items-center justify-between">
+                <div>
+                  <p className="font-serif text-[#1C1C1A] text-base font-normal">James &amp; Sarah L.</p>
+                  <p className="text-xs text-[#8C857B]">Naples, FL</p>
+                </div>
+                <span className="text-xs text-[#C9A84C] font-semibold">Verified Client</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Link to Google Business Listing */}
+          <div className="text-center mt-10">
+            <a
+              href="https://www.google.com/maps/place/Soarin+Handyman+Services,+Llc/@26.5874184,-81.9571966,17z/data=!3m1!4b1!4m6!3m5!1s0x88db474b895eaaab:0x2b90686f1d88a466!8m2!3d26.5874184!4d-81.9571966!16s%2Fg%2F11h7v7p787?hl=en&entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-[#C9A84C] hover:text-[#B8943F] text-sm font-semibold transition-colors group"
+            >
+              <span>View All Customer Reviews on Google Maps</span>
+              <span className="group-hover:translate-x-1 transition-transform">→</span>
+            </a>
           </div>
         </div>
       </section>

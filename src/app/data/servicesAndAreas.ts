@@ -6,6 +6,7 @@ export interface ServiceDetail {
   category: "installations" | "repairs" | "improvements";
   image: string;
   gallery: string[];
+  beforeAfter?: { before: string; after: string; label?: string }[];
   benefits: string[];
   commonProblems: string[];
   whatIsIncluded: string[];
@@ -29,11 +30,22 @@ export const servicesData: ServiceDetail[] = [
     longDescription:
       "A properly installed ceiling fan improves airflow, reduces energy costs, and adds a finished look to any room. Whether you are replacing an outdated fan or installing one where there was none before, Soarin Handyman Services handles the full process with care — from secure mounting to clean wiring and balanced operation.",
     category: "installations",
-    image: "/images/ceiling-fans/ceiling-fan-vent-installation.jpg",
+    image: "/images/ceiling-fans/TN.jfif",
     gallery: [
-      "/images/ceiling-fans/ceiling-fan-vent-installation.jpg",
-      "/images/ceiling-fans/ceiling-electrical-framing.jpg",
-      "/images/ceiling-fans/ceiling-fan-services-showcase.jpg",
+      "/images/ceiling-fans/d9275cf93595b294e021c6a02d41a94f3546fb76-1.jfif",
+      "/images/ceiling-fans/82160d21363a65eb5b697f31c460fb6018819729-1.jfif",
+    ],
+    beforeAfter: [
+      {
+        before: "/images/ceiling-fans/beforeafter1/before.jfif",
+        after: "/images/ceiling-fans/beforeafter1/after.jfif",
+        label: "Ceiling Fan Replacement — Living Room",
+      },
+      {
+        before: "/images/ceiling-fans/beforeafter2/before.jfif",
+        after: "/images/ceiling-fans/beforeafter2/after.jfif",
+        label: "Ceiling Fan Installation — Bedroom",
+      },
     ],
     benefits: [
       "Improved air circulation and comfort",
@@ -75,14 +87,22 @@ export const servicesData: ServiceDetail[] = [
     longDescription:
       "Damaged drywall is one of the most common issues in Southwest Florida homes — from settling cracks and doorknob holes to water stains and textured ceilings. Soarin Handyman Services patches, blends, and finishes drywall so the repair disappears into the surrounding wall.",
     category: "repairs",
-    image: "/images/drywall-repairs/drywall-patch-repair.jpg",
+    image: "/images/drywall-repairs/TN.jfif",
     gallery: [
       "/images/drywall-repairs/drywall-patch-repair.jpg",
-      "/images/drywall-repairs/drywall-anchor-hole-spackle.jpg",
-      "/images/drywall-repairs/drywall-room-hole-patching.jpg",
-      "/images/drywall-repairs/drywall-framing-insulation-repair.jpg",
       "/images/drywall-repairs/drywall-room-patching.jpg",
-      "/images/drywall-repairs/drywall-water-damage-drying.jpg",
+    ],
+    beforeAfter: [
+      {
+        before: "/images/drywall-repairs/beforeafter1/before.jfif",
+        after: "/images/drywall-repairs/beforeafter1/after.jfif",
+        label: "Wall Hole Patch & Finish",
+      },
+      {
+        before: "/images/drywall-repairs/beforeafter2/before.jpg",
+        after: "/images/drywall-repairs/beforeafter2/after.jfif",
+        label: "Drywall Damage Repair & Texture Match",
+      },
     ],
     benefits: [
       "Seamless patches that blend with surrounding walls",
@@ -117,92 +137,108 @@ export const servicesData: ServiceDetail[] = [
     ],
   },
   {
-    slug: "caulking",
-    name: "Caulking",
+    slug: "hurricane-shutter-repair",
+    name: "Hurricane Shutter Repair",
     shortDescription:
-      "Refresh worn or damaged caulking around bathrooms, kitchens, windows, and other surfaces.",
+      "Professional hurricane shutter repair, track alignment, panel replacement, and storm readiness.",
     longDescription:
-      "Caulking is a small detail with a big impact. Worn or missing caulk leads to water damage, drafts, and an unkempt appearance. Soarin Handyman Services removes old caulk and applies fresh, clean beads that protect your home and look sharp.",
+      "Living in Southwest Florida means hurricane shutters are essential for protecting your home. Soarin Handyman Services repairs stuck or damaged storm shutters, lubricates tracks, replaces worn mounting hardware, and aligns panels so your storm protection is ready when you need it.",
     category: "repairs",
-    image: "/images/caulking/window-caulking-installation.jpg",
+    image: "/images/hurricane Shutter Repair/TN.jfif",
     gallery: [
-      "/images/caulking/window-caulking-installation.jpg",
-      "/images/caulking/window-frame-sealing.jpg",
-      "/images/caulking/bathroom-shower-caulking.jpg",
-      "/images/caulking/tile-joint-caulking.jpg",
+      "/images/hurricane Shutter Repair/d0578b9601f5e5dce3d6a8fe3fa46c56c088db62-1.jfif",
+      "/images/hurricane Shutter Repair/22e60ccd6ad0873fd0194a3f1ac387801282056b-1.jfif",
+      "/images/hurricane Shutter Repair/7cd36c60b02c058e641df5ff0b9d99923f1170e4-1.jfif",
+      "/images/hurricane Shutter Repair/ba74a733696b58358add83d2610eb10b3420be2e-1.jfif",
+    ],
+    beforeAfter: [
+      {
+        before: "/images/hurricane Shutter Repair/beforeafter/before.jfif",
+        after: "/images/hurricane Shutter Repair/beforeafter/after.jfif",
+        label: "Hurricane Shutter Track Repair & Alignment",
+      },
     ],
     benefits: [
-      "Prevents water intrusion and moisture damage",
-      "Improves energy efficiency by sealing gaps",
-      "Clean, professional-looking bead lines",
-      "Mold and mildew resistant sealants available",
+      "Ensures reliable storm protection when severe weather approaches",
+      "Smooth motorized or manual track operation",
+      "Prevents corrosion, lock-ups, and jammed panels",
+      "Extends lifespan of existing accordion, roll-down, or panel shutters",
     ],
     commonProblems: [
-      "Peeling, cracked, or discolored caulk in bathrooms",
-      "Gaps around windows or doors letting in drafts",
-      "Missing caulk around kitchen sinks or countertops",
-      "Old caulk that no longer seals properly",
+      "Shutters are jammed, stuck, or hard to open and close",
+      "Bent tracks or rusted mounting hardware",
+      "Missing panel lock pins or broken housing cranks",
+      "Storm panels not seating properly in guide channels",
     ],
     whatIsIncluded: [
-      "Removal of old or damaged caulk",
-      "Surface cleaning and preparation",
-      "Application of appropriate sealant for the area",
-      "Smooth, clean finish",
-      "Cleanup of excess material",
+      "Full system inspection of tracks, panels, and locks",
+      "Track cleaning, debris removal, and high-performance lubrication",
+      "Hardware tightening and bent track alignment",
+      "Replacement of broken pins, locks, or worn fasteners",
+      "Full test opening and closing operation",
     ],
     faqs: [
       {
-        question: "What type of caulk do you use?",
+        question: "What types of hurricane shutters do you service?",
         answer:
-          "We use the appropriate sealant for each surface — silicone for wet areas like showers and tubs, and paintable latex caulk for trim, windows, and baseboards.",
+          "We repair accordion shutters, roll-down shutters, bahama/colonial style shutters, and storm panel track systems.",
+      },
+      {
+        question: "Can you un-jam shutters that haven't been operated in years?",
+        answer:
+          "Yes. We clean out accumulated salt air corrosion, dust, and debris, realign tracks, and replace rusted hardware to restore smooth operation.",
       },
     ],
   },
   {
-    slug: "faucet-replacement",
-    name: "Faucet Replacement",
+    slug: "outdoor-miscellaneous-work",
+    name: "Outdoor Miscellaneous Work",
     shortDescription:
-      "Replace outdated or damaged faucets with a clean, professional installation.",
+      "Fence repairs, deck maintenance, outdoor fixture mounting, and exterior handyman solutions.",
     longDescription:
-      "A new faucet can transform the look of a kitchen or bathroom, but proper installation matters. Soarin Handyman Services removes old faucets, prepares the surface, and installs new fixtures with secure connections and clean finishes.",
-    category: "installations",
-    image: "/images/faucet-replacement/commercial-sink-faucet-plumbing.jpg",
+      "Outdoor areas in Southwest Florida require regular upkeep to withstand sun, heat, and coastal air. Soarin Handyman Services handles a wide range of outdoor tasks — from fence panel repairs and gate adjustments to exterior wall mounting, soffit patch-ups, and outdoor fixture installations.",
+    category: "improvements",
+    image: "/images/Outdoor Miscellaneous work/TN.jfif",
     gallery: [
-      "/images/faucet-replacement/commercial-sink-faucet-plumbing.jpg",
-      "/images/faucet-replacement/under-sink-plumbing-vanity.jpg",
-      "/images/faucet-replacement/bathroom-vanity-faucet-installation.jpg",
-      "/images/faucet-replacement/bathroom-faucet-shower-fixture.jpg",
-      "/images/faucet-replacement/water-heater-plumbing-install.jpg",
+      "/images/Outdoor Miscellaneous work/984027b5d6755a58e07852bfb0408ac960f364f1-1.jfif",
+      "/images/Outdoor Miscellaneous work/982d766551a353ab452ccd3ec604878432db3843-1.jfif",
+      "/images/Outdoor Miscellaneous work/f4ea58a60548615096cfb3a9c932f3f026fe9c98-1.jfif",
+    ],
+    beforeAfter: [
+      {
+        before: "/images/Outdoor Miscellaneous work/beforeafter/before.jfif",
+        after: "/images/Outdoor Miscellaneous work/beforeafter/after.jfif",
+        label: "Outdoor Repair & Cleanup",
+      },
     ],
     benefits: [
-      "Updated look for kitchens and bathrooms",
-      "Secure, leak-free connections",
-      "Proper alignment and smooth operation",
-      "Removal and disposal of old fixture",
+      "Protects home exterior against weather and moisture wear",
+      "Keeps fences, gates, and outdoor structures safe and operational",
+      "Custom solutions for unique outdoor handyman projects",
+      "Enhances curb appeal and backyard functionality",
     ],
     commonProblems: [
-      "Old faucet is leaking or corroded",
-      "Handles are stiff or broken",
-      "You are updating your kitchen or bathroom fixtures",
-      "Hard water has damaged the finish",
+      "Sagging fence gates or loose post hinges",
+      "Damaged patio trim, screen doors, or soffit panels",
+      "Outdoor decor, hose reels, or light fixtures needing secure mounting",
+      "Weathered wood or composite outdoor features",
     ],
     whatIsIncluded: [
-      "Shut-off of water supply",
-      "Removal of existing faucet",
-      "Inspection of supply lines and valves",
-      "Installation of new faucet with secure connections",
-      "Leak testing and cleanup",
+      "Assessment of outdoor repair or installation area",
+      "Precise alignment, leveling, and structural mounting",
+      "Weather-rated exterior fasteners and rust-resistant hardware",
+      "Cleanup and disposal of job debris",
     ],
     faqs: [
       {
-        question: "Do I need to buy the faucet myself?",
+        question: "Do you repair vinyl and wood fences?",
         answer:
-          "You can purchase the faucet you want, or we can discuss options. We recommend confirming the fit and compatibility before purchasing.",
+          "Yes, we patch damaged fence slats, align latch hardware, tighten posts, and replace broken sections.",
       },
       {
-        question: "What if the supply lines or valves need replacing?",
+        question: "What kinds of outdoor items can you mount?",
         answer:
-          "We will let you know if we find worn supply lines or valves during installation. These can typically be replaced during the same visit.",
+          "We mount hose reels, outdoor light fixtures, shade sail anchors, decorative wall art, hose racks, and security hardware.",
       },
     ],
   },
@@ -214,14 +250,15 @@ export const servicesData: ServiceDetail[] = [
     longDescription:
       "Painting is one of the fastest ways to revitalize a room or exterior trim. Soarin Handyman Services provides careful surface preparation, clean taping, and smooth paint application so your walls look vibrant and flawlessly finished.",
     category: "improvements",
-    image: "/images/painting/exterior-stucco-entry-painting.jpg",
+    image: "/images/painting/TN.jfif",
     gallery: [
       "/images/painting/exterior-stucco-entry-painting.jpg",
-      "/images/painting/exterior-front-door-painting.jpg",
       "/images/painting/interior-room-painting.jpg",
       "/images/painting/exterior-wall-stucco-repair.jpg",
-      "/images/painting/exterior-patio-stucco-painting.jpg",
-      "/images/painting/exterior-balcony-trim-painting.jpg",
+      "/images/painting/5f4f709b09155bdafaa9903b3ba882c1bd68620d-1.jfif",
+      "/images/painting/69e6ddcf3c5bcce3fd50b568e29bb4e9d6c312f8-1.jfif",
+      "/images/painting/8594fe04275bc10396602d4d8007b7105f842e75-1.jfif",
+      "/images/painting/c1a35211cbd2302998c5e1b7cc52e395af29dc17-1.jfif",
     ],
     benefits: [
       "Refreshed appearance for interior and exterior spaces",
@@ -249,45 +286,54 @@ export const servicesData: ServiceDetail[] = [
     ],
   },
   {
-    slug: "bathroom-grab-bars",
-    name: "Bathroom Grab Bars",
+    slug: "bathroom",
+    name: "Bathroom Services",
     shortDescription:
-      "Secure installation of safety grab bars for bathrooms, providing added support and accessibility.",
+      "Vanity replacements, shower door installations, grab bar mounting, and complete bathroom upgrades.",
     longDescription:
-      "Properly installed grab bars provide essential safety and support in showers, bathtubs, and near toilets. Soarin Handyman Services ensures solid anchor mounting into wall studs or heavy-duty anchors so you can feel completely confident and safe.",
+      "Bathrooms require precision workmanship to stay functional, watertight, and stylish. Soarin Handyman Services provides complete bathroom updates including vanity replacements, frameless shower door fittings, safety grab bar installations, and tile joint waterproofing.",
     category: "installations",
-    image: "/images/bathroom-grab-bars/grab-bar-marble-shower.jpg",
+    image: "/images/Bathroom/TN.jfif",
     gallery: [
-      "/images/bathroom-grab-bars/grab-bar-marble-shower.jpg",
-      "/images/bathroom-grab-bars/grab-bar-vertical-install.jpg",
-      "/images/bathroom-grab-bars/grab-bar-horizontal-tile.jpg",
-      "/images/bathroom-grab-bars/grab-bar-bathtub-safety.jpg",
-      "/images/bathroom-grab-bars/grab-bar-tub-wall-enclosure.jpg",
-      "/images/bathroom-grab-bars/grab-bar-tub-wall.jpg",
-      "/images/bathroom-grab-bars/grab-bar-bathroom-accessibility.jpg",
+      "/images/Bathroom/grab-bar-marble-shower.jpg",
+      "/images/Bathroom/grab-bar-vertical-install.jpg",
+      "/images/Bathroom/grab-bar-horizontal-tile.jpg",
+      "/images/Bathroom/grab-bar-tub-wall-enclosure.jpg",
+      "/images/Bathroom/bathroom-vanity-faucet-installation.jpg",
+      "/images/Bathroom/bathroom-faucet-shower-fixture.jpg",
+      "/images/Bathroom/3b60ff19ced6488dc77a8064bade14786ca2d1ab-1.jfif",
+      "/images/Bathroom/97812be79efaa30638effdd595f8481044ab473b-1.jfif",
+      "/images/Bathroom/e8768c7c5e7544f257c4aa8bb655710ef666dc4b-1.jfif",
     ],
     benefits: [
-      "Enhanced safety and fall prevention in wet areas",
-      "Anchor mounting into wall studs or solid masonry",
-      "Clean, sleek finish that matches bathroom fixtures",
-      "Heavy weight-capacity rating for reliable stability",
+      "Elevates bathroom design and functionality",
+      "Clean, watertight seals around tubs, showers, and vanities",
+      "Enhanced accessibility with solid anchor-mounted grab bars",
+      "Expert installation of mirrors, vanities, and shower doors",
     ],
     commonProblems: [
-      "Lack of stability when getting in or out of the shower/tub",
-      "Existing grab bars are loose or improperly mounted",
-      "Need accessibility upgrades for family members",
+      "Outdated or leaking bathroom vanity cabinet",
+      "Old shower curtains or leaking shower doors",
+      "Lack of safety grab bars in showers and bathtubs",
+      "Peeling grout, worn caulk, or misaligned fixtures",
     ],
     whatIsIncluded: [
-      "Measurement and height positioning assessment",
-      "Stud detection or heavy-duty anchor placement",
-      "Secure mounting and torque testing",
-      "Waterproof sealing around mounting plates",
+      "Old fixture or vanity removal",
+      "Precision leveling and wall anchoring into studs",
+      "Watertight silicone sealing around wet zone boundaries",
+      "Plumbing connection check and leak testing",
+      "Workspace cleanup and debris removal",
     ],
     faqs: [
       {
-        question: "Can grab bars be installed on tile walls?",
+        question: "Can you replace both the vanity and the faucet at the same time?",
         answer:
-          "Yes. We use specialized diamond drill bits to safely drill through ceramic or porcelain tile without cracking, securing directly into studs or heavy-duty anchors.",
+          "Yes! We can swap out the vanity cabinet, sink, faucet, supply lines, and p-trap in a single streamlined visit.",
+      },
+      {
+        question: "Do you install shower doors on ceramic or porcelain tile?",
+        answer:
+          "Yes, we use specialized diamond bits to drill cleanly through tile and secure shower door channels into wall studs or heavy-duty anchors.",
       },
     ],
   },
@@ -299,7 +345,7 @@ export const serviceAreasData: ServiceAreaDetail[] = [
     name: "Cape Coral",
     description:
       "Cape Coral homeowners trust Soarin Handyman Services for professional home repairs, installations, and improvements. From ceiling fan installation to drywall repair, we help keep your Cape Coral home looking and functioning at its best.",
-    image: "https://images.pexels.com/photos/19219055/pexels-photo-19219055.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "/images/Outdoor Miscellaneous work/TN.jfif",
     features: [
       "Fast response for Cape Coral neighborhoods",
       "Expertise in canal-home and coastal property repairs",
@@ -312,7 +358,7 @@ export const serviceAreasData: ServiceAreaDetail[] = [
     name: "Fort Myers",
     description:
       "Fort Myers residents rely on Soarin Handyman Services for quality home repairs and improvements throughout the area. Whether you need faucet replacement, caulking, or general handyman work, we bring professional workmanship to every Fort Myers project.",
-    image: "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "/images/painting/TN.jfif",
     features: [
       "Reliable service across historic and modern Fort Myers homes",
       "Comprehensive indoor & outdoor maintenance",
@@ -325,7 +371,7 @@ export const serviceAreasData: ServiceAreaDetail[] = [
     name: "Naples",
     description:
       "Naples homeowners deserve meticulous, professional handyman services. Soarin Handyman Services provides repairs, installations, and home improvement projects throughout Naples with the attention to detail your home deserves.",
-    image: "https://images.pexels.com/photos/36777507/pexels-photo-36777507.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "/images/Bathroom/TN.jfif",
     features: [
       "Meticulous attention to high-end home details",
       "Careful property protection during all repairs",
@@ -338,7 +384,7 @@ export const serviceAreasData: ServiceAreaDetail[] = [
     name: "Port Charlotte",
     description:
       "Port Charlotte homeowners count on Soarin Handyman Services for reliable home repairs and improvements. From drywall repair to ceiling fan installation, we serve Port Charlotte with professional workmanship and clear communication.",
-    image: "https://images.pexels.com/photos/6474129/pexels-photo-6474129.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "/images/drywall-repairs/TN.jfif",
     features: [
       "Dependable home maintenance for Port Charlotte properties",
       "Drywall, fan, faucet, and grab bar expertise",
@@ -351,7 +397,7 @@ export const serviceAreasData: ServiceAreaDetail[] = [
     name: "Punta Gorda",
     description:
       "Punta Gorda residents trust Soarin Handyman Services for quality home repairs and handyman projects. We bring professional tools, experience, and attention to detail to every project in Punta Gorda.",
-    image: "https://images.pexels.com/photos/11427055/pexels-photo-11427055.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "/images/hurricane Shutter Repair/TN.jfif",
     features: [
       "Professional service for Punta Gorda waterfront & inland homes",
       "Specialized fixture and hardware replacements",
@@ -364,7 +410,7 @@ export const serviceAreasData: ServiceAreaDetail[] = [
     name: "Sanibel",
     description:
       "Sanibel homeowners rely on Soarin Handyman Services for professional repairs and improvements. We understand the unique needs of island living and provide handyman services that keep your Sanibel home in excellent condition.",
-    image: "https://images.pexels.com/photos/12196323/pexels-photo-12196323.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "/images/ceiling-fans/TN.jfif",
     features: [
       "Experienced with Sanibel island property needs",
       "Moisture and salt-air resistant sealing & caulking",
