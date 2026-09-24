@@ -14,7 +14,7 @@ const services = [
     title: "Ceiling Fan Installation & Replacement",
     description:
       "Professional installation and replacement of ceiling fans for improved comfort and style.",
-    image: "/images/ceiling-fans/TN.jfif",
+    image: "/images/ceiling-fans/TN.jpg",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
@@ -34,7 +34,7 @@ const services = [
     title: "Drywall Repair",
     description:
       "Repair holes, cracks, dents, and damaged drywall with a clean, finished appearance.",
-    image: "/images/drywall-repairs/TN.jfif",
+    image: "/images/drywall-repairs/TN.jpg",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M18.37 2.63 14 7l-1.59-1.59a2 2 0 0 0-2.82 0L8 7l9 9 1.59-1.59a2 2 0 0 0 0-2.82L17 10l4.37-4.37a2.12 2.12 0 1 0-3-3Z" />
@@ -48,7 +48,7 @@ const services = [
     title: "Hurricane Shutter Repair",
     description:
       "Professional hurricane shutter repair, track alignment, panel replacement, and storm readiness.",
-    image: "/images/hurricane Shutter Repair/TN.jfif",
+    image: "/images/hurricane-shutter-repair/TN.jpg",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
@@ -60,7 +60,7 @@ const services = [
     title: "Outdoor Miscellaneous Work",
     description:
       "Fence repairs, deck maintenance, outdoor fixture mounting, and exterior handyman solutions.",
-    image: "/images/Outdoor Miscellaneous work/TN.jfif",
+    image: "/images/outdoor-miscellaneous-work/TN.jpg",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
@@ -73,7 +73,7 @@ const services = [
     title: "Interior & Exterior Painting",
     description:
       "Fresh coats of paint for interior walls, trim, and exterior surfaces with clean, professional results.",
-    image: "/images/painting/TN.jfif",
+    image: "/images/painting/TN.jpg",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="2" width="20" height="10" rx="2" />
@@ -89,7 +89,7 @@ const services = [
     title: "Bathroom Services",
     description:
       "Vanity replacements, shower door installations, grab bar mounting, and complete bathroom upgrades.",
-    image: "/images/Bathroom/TN.jfif",
+    image: "/images/bathroom/TN.jpg",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M4 22V4c0-1 1-2 2-2h12c1 0 2 1 2 2v18" />
@@ -349,7 +349,7 @@ export default function Home() {
             <div className="relative">
               <div className="relative h-[400px] sm:h-[480px] lg:h-[500px] w-full overflow-hidden rounded-sm">
                 <Image
-                  src="/images/general/soarin-owner-handyman.jpg"
+                  src="/images/outdoor-miscellaneous-work/984027b5d6755a58e07852bfb0408ac960f364f1-1.jpg"
                   alt="Soarin Handyman Services owner ready for home repair projects"
                   fill
                   className="object-cover object-top"

@@ -14,7 +14,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: "Bathroom Vanity & Faucet Installation",
     category: "installations",
-    image: "/images/Bathroom/bathroom-vanity-faucet-installation.jpg",
+    image: "/images/bathroom/bathroom-vanity-faucet-installation.jpg",
     description: "Professional vanity cabinet and faucet plumbing installation.",
   },
   {
@@ -26,31 +26,31 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: "Marble Shower Safety Grab Bar",
     category: "installations",
-    image: "/images/Bathroom/grab-bar-marble-shower.jpg",
+    image: "/images/bathroom/grab-bar-marble-shower.jpg",
     description: "Vertical stainless steel safety grab bar securely mounted in marble tile shower.",
   },
   {
     title: "Hurricane Shutter Track Repair",
     category: "repairs",
-    image: "/images/hurricane Shutter Repair/d0578b9601f5e5dce3d6a8fe3fa46c56c088db62-1.jfif",
+    image: "/images/hurricane-shutter-repair/d0578b9601f5e5dce3d6a8fe3fa46c56c088db62-1.jpg",
     description: "Storm shutter track alignment, lubrication, and hardware repair.",
   },
   {
     title: "Exterior Stucco Entryway Painting",
     category: "improvements",
-    image: "/images/painting/exterior-stucco-entry-painting.jpg",
+    image: "/images/painting/exterior-wall-stucco-repair.jpg",
     description: "Fresh exterior paint coat and trim finishing for home entryway.",
   },
   {
     title: "Ceiling Fan Replacement",
     category: "installations",
-    image: "/images/ceiling-fans/d9275cf93595b294e021c6a02d41a94f3546fb76-1.jfif",
+    image: "/images/ceiling-fans/TN.jpg",
     description: "Complete ceiling fan swap with secure mounting and wiring.",
   },
   {
     title: "Outdoor Miscellaneous Repair",
     category: "improvements",
-    image: "/images/Outdoor Miscellaneous work/984027b5d6755a58e07852bfb0408ac960f364f1-1.jfif",
+    image: "/images/outdoor-miscellaneous-work/984027b5d6755a58e07852bfb0408ac960f364f1-1.jpg",
     description: "Fence, gate, and outdoor fixture repair and installation.",
   },
   {
@@ -62,7 +62,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: "Bathroom Shower Grab Bar Install",
     category: "installations",
-    image: "/images/Bathroom/grab-bar-vertical-install.jpg",
+    image: "/images/bathroom/grab-bar-vertical-install.jpg",
     description: "Heavy-duty grab bar securely mounted alongside shower enclosure.",
   },
 ];

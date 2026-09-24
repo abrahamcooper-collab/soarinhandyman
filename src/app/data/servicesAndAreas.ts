@@ -30,20 +30,20 @@ export const servicesData: ServiceDetail[] = [
     longDescription:
       "A properly installed ceiling fan improves airflow, reduces energy costs, and adds a finished look to any room. Whether you are replacing an outdated fan or installing one where there was none before, Soarin Handyman Services handles the full process with care — from secure mounting to clean wiring and balanced operation.",
     category: "installations",
-    image: "/images/ceiling-fans/TN.jfif",
+    image: "/images/ceiling-fans/TN.jpg",
     gallery: [
-      "/images/ceiling-fans/d9275cf93595b294e021c6a02d41a94f3546fb76-1.jfif",
-      "/images/ceiling-fans/82160d21363a65eb5b697f31c460fb6018819729-1.jfif",
+      "/images/ceiling-fans/TN.jpg",
+      "/images/ceiling-fans/82160d21363a65eb5b697f31c460fb6018819729-1.jpg",
     ],
     beforeAfter: [
       {
-        before: "/images/ceiling-fans/beforeafter1/before.jfif",
-        after: "/images/ceiling-fans/beforeafter1/after.jfif",
+        before: "/images/ceiling-fans/beforeafter1/before.jpg",
+        after: "/images/ceiling-fans/beforeafter1/after.jpg",
         label: "Ceiling Fan Replacement — Living Room",
       },
       {
-        before: "/images/ceiling-fans/beforeafter2/before.jfif",
-        after: "/images/ceiling-fans/beforeafter2/after.jfif",
+        before: "/images/ceiling-fans/beforeafter2/before.jpg",
+        after: "/images/ceiling-fans/beforeafter2/after.jpg",
         label: "Ceiling Fan Installation — Bedroom",
       },
     ],
@@ -87,20 +87,20 @@ export const servicesData: ServiceDetail[] = [
     longDescription:
       "Damaged drywall is one of the most common issues in Southwest Florida homes — from settling cracks and doorknob holes to water stains and textured ceilings. Soarin Handyman Services patches, blends, and finishes drywall so the repair disappears into the surrounding wall.",
     category: "repairs",
-    image: "/images/drywall-repairs/TN.jfif",
+    image: "/images/drywall-repairs/TN.jpg",
     gallery: [
       "/images/drywall-repairs/drywall-patch-repair.jpg",
       "/images/drywall-repairs/drywall-room-patching.jpg",
     ],
     beforeAfter: [
       {
-        before: "/images/drywall-repairs/beforeafter1/before.jfif",
-        after: "/images/drywall-repairs/beforeafter1/after.jfif",
+        before: "/images/drywall-repairs/beforeafter1/before.jpg",
+        after: "/images/drywall-repairs/beforeafter1/after.jpg",
         label: "Wall Hole Patch & Finish",
       },
       {
         before: "/images/drywall-repairs/beforeafter2/before.jpg",
-        after: "/images/drywall-repairs/beforeafter2/after.jfif",
+        after: "/images/drywall-repairs/beforeafter2/after.jpg",
         label: "Drywall Damage Repair & Texture Match",
       },
     ],
@@ -144,17 +144,17 @@ export const servicesData: ServiceDetail[] = [
     longDescription:
       "Living in Southwest Florida means hurricane shutters are essential for protecting your home. Soarin Handyman Services repairs stuck or damaged storm shutters, lubricates tracks, replaces worn mounting hardware, and aligns panels so your storm protection is ready when you need it.",
     category: "repairs",
-    image: "/images/hurricane Shutter Repair/TN.jfif",
+    image: "/images/hurricane-shutter-repair/TN.jpg",
     gallery: [
-      "/images/hurricane Shutter Repair/d0578b9601f5e5dce3d6a8fe3fa46c56c088db62-1.jfif",
-      "/images/hurricane Shutter Repair/22e60ccd6ad0873fd0194a3f1ac387801282056b-1.jfif",
-      "/images/hurricane Shutter Repair/7cd36c60b02c058e641df5ff0b9d99923f1170e4-1.jfif",
-      "/images/hurricane Shutter Repair/ba74a733696b58358add83d2610eb10b3420be2e-1.jfif",
+      "/images/hurricane-shutter-repair/TN.jpg",
+      "/images/hurricane-shutter-repair/d0578b9601f5e5dce3d6a8fe3fa46c56c088db62-1.jpg",
+      "/images/hurricane-shutter-repair/22e60ccd6ad0873fd0194a3f1ac387801282056b-1.jpg",
+      "/images/hurricane-shutter-repair/7cd36c60b02c058e641df5ff0b9d99923f1170e4-1.jpg",
     ],
     beforeAfter: [
       {
-        before: "/images/hurricane Shutter Repair/beforeafter/before.jfif",
-        after: "/images/hurricane Shutter Repair/beforeafter/after.jfif",
+        before: "/images/hurricane-shutter-repair/beforeafter/before.jpg",
+        after: "/images/hurricane-shutter-repair/beforeafter/after.jpg",
         label: "Hurricane Shutter Track Repair & Alignment",
       },
     ],
@@ -198,16 +198,16 @@ export const servicesData: ServiceDetail[] = [
     longDescription:
       "Outdoor areas in Southwest Florida require regular upkeep to withstand sun, heat, and coastal air. Soarin Handyman Services handles a wide range of outdoor tasks — from fence panel repairs and gate adjustments to exterior wall mounting, soffit patch-ups, and outdoor fixture installations.",
     category: "improvements",
-    image: "/images/Outdoor Miscellaneous work/TN.jfif",
+    image: "/images/outdoor-miscellaneous-work/TN.jpg",
     gallery: [
-      "/images/Outdoor Miscellaneous work/984027b5d6755a58e07852bfb0408ac960f364f1-1.jfif",
-      "/images/Outdoor Miscellaneous work/982d766551a353ab452ccd3ec604878432db3843-1.jfif",
-      "/images/Outdoor Miscellaneous work/f4ea58a60548615096cfb3a9c932f3f026fe9c98-1.jfif",
+      "/images/outdoor-miscellaneous-work/984027b5d6755a58e07852bfb0408ac960f364f1-1.jpg",
+      "/images/outdoor-miscellaneous-work/982d766551a353ab452ccd3ec604878432db3843-1.jpg",
+      "/images/outdoor-miscellaneous-work/f4ea58a60548615096cfb3a9c932f3f026fe9c98-1.jpg",
     ],
     beforeAfter: [
       {
-        before: "/images/Outdoor Miscellaneous work/beforeafter/before.jfif",
-        after: "/images/Outdoor Miscellaneous work/beforeafter/after.jfif",
+        before: "/images/outdoor-miscellaneous-work/beforeafter/before.jpg",
+        after: "/images/outdoor-miscellaneous-work/beforeafter/after.jpg",
         label: "Outdoor Repair & Cleanup",
       },
     ],
@@ -250,15 +250,14 @@ export const servicesData: ServiceDetail[] = [
     longDescription:
       "Painting is one of the fastest ways to revitalize a room or exterior trim. Soarin Handyman Services provides careful surface preparation, clean taping, and smooth paint application so your walls look vibrant and flawlessly finished.",
     category: "improvements",
-    image: "/images/painting/TN.jfif",
+    image: "/images/painting/TN.jpg",
     gallery: [
-      "/images/painting/exterior-stucco-entry-painting.jpg",
+      "/images/painting/TN.jpg",
       "/images/painting/interior-room-painting.jpg",
       "/images/painting/exterior-wall-stucco-repair.jpg",
-      "/images/painting/5f4f709b09155bdafaa9903b3ba882c1bd68620d-1.jfif",
-      "/images/painting/69e6ddcf3c5bcce3fd50b568e29bb4e9d6c312f8-1.jfif",
-      "/images/painting/8594fe04275bc10396602d4d8007b7105f842e75-1.jfif",
-      "/images/painting/c1a35211cbd2302998c5e1b7cc52e395af29dc17-1.jfif",
+      "/images/painting/69e6ddcf3c5bcce3fd50b568e29bb4e9d6c312f8-1.jpg",
+      "/images/painting/8594fe04275bc10396602d4d8007b7105f842e75-1.jpg",
+      "/images/painting/c1a35211cbd2302998c5e1b7cc52e395af29dc17-1.jpg",
     ],
     benefits: [
       "Refreshed appearance for interior and exterior spaces",
@@ -293,17 +292,17 @@ export const servicesData: ServiceDetail[] = [
     longDescription:
       "Bathrooms require precision workmanship to stay functional, watertight, and stylish. Soarin Handyman Services provides complete bathroom updates including vanity replacements, frameless shower door fittings, safety grab bar installations, and tile joint waterproofing.",
     category: "installations",
-    image: "/images/Bathroom/TN.jfif",
+    image: "/images/bathroom/TN.jpg",
     gallery: [
-      "/images/Bathroom/grab-bar-marble-shower.jpg",
-      "/images/Bathroom/grab-bar-vertical-install.jpg",
-      "/images/Bathroom/grab-bar-horizontal-tile.jpg",
-      "/images/Bathroom/grab-bar-tub-wall-enclosure.jpg",
-      "/images/Bathroom/bathroom-vanity-faucet-installation.jpg",
-      "/images/Bathroom/bathroom-faucet-shower-fixture.jpg",
-      "/images/Bathroom/3b60ff19ced6488dc77a8064bade14786ca2d1ab-1.jfif",
-      "/images/Bathroom/97812be79efaa30638effdd595f8481044ab473b-1.jfif",
-      "/images/Bathroom/e8768c7c5e7544f257c4aa8bb655710ef666dc4b-1.jfif",
+      "/images/bathroom/TN.jpg",
+      "/images/bathroom/grab-bar-marble-shower.jpg",
+      "/images/bathroom/grab-bar-vertical-install.jpg",
+      "/images/bathroom/grab-bar-horizontal-tile.jpg",
+      "/images/bathroom/grab-bar-tub-wall-enclosure.jpg",
+      "/images/bathroom/bathroom-vanity-faucet-installation.jpg",
+      "/images/bathroom/bathroom-faucet-shower-fixture.jpg",
+      "/images/bathroom/3b60ff19ced6488dc77a8064bade14786ca2d1ab-1.jpg",
+      "/images/bathroom/e8768c7c5e7544f257c4aa8bb655710ef666dc4b-1.jpg",
     ],
     benefits: [
       "Elevates bathroom design and functionality",
@@ -345,7 +344,7 @@ export const serviceAreasData: ServiceAreaDetail[] = [
     name: "Cape Coral",
     description:
       "Cape Coral homeowners trust Soarin Handyman Services for professional home repairs, installations, and improvements. From ceiling fan installation to drywall repair, we help keep your Cape Coral home looking and functioning at its best.",
-    image: "/images/Outdoor Miscellaneous work/TN.jfif",
+    image: "/images/outdoor-miscellaneous-work/TN.jpg",
     features: [
       "Fast response for Cape Coral neighborhoods",
       "Expertise in canal-home and coastal property repairs",
@@ -358,7 +357,7 @@ export const serviceAreasData: ServiceAreaDetail[] = [
     name: "Fort Myers",
     description:
       "Fort Myers residents rely on Soarin Handyman Services for quality home repairs and improvements throughout the area. Whether you need faucet replacement, caulking, or general handyman work, we bring professional workmanship to every Fort Myers project.",
-    image: "/images/painting/TN.jfif",
+    image: "/images/painting/TN.jpg",
     features: [
       "Reliable service across historic and modern Fort Myers homes",
       "Comprehensive indoor & outdoor maintenance",
@@ -371,7 +370,7 @@ export const serviceAreasData: ServiceAreaDetail[] = [
     name: "Naples",
     description:
       "Naples homeowners deserve meticulous, professional handyman services. Soarin Handyman Services provides repairs, installations, and home improvement projects throughout Naples with the attention to detail your home deserves.",
-    image: "/images/Bathroom/TN.jfif",
+    image: "/images/bathroom/TN.jpg",
     features: [
       "Meticulous attention to high-end home details",
       "Careful property protection during all repairs",
@@ -384,7 +383,7 @@ export const serviceAreasData: ServiceAreaDetail[] = [
     name: "Port Charlotte",
     description:
       "Port Charlotte homeowners count on Soarin Handyman Services for reliable home repairs and improvements. From drywall repair to ceiling fan installation, we serve Port Charlotte with professional workmanship and clear communication.",
-    image: "/images/drywall-repairs/TN.jfif",
+    image: "/images/drywall-repairs/TN.jpg",
     features: [
       "Dependable home maintenance for Port Charlotte properties",
       "Drywall, fan, faucet, and grab bar expertise",
@@ -397,7 +396,7 @@ export const serviceAreasData: ServiceAreaDetail[] = [
     name: "Punta Gorda",
     description:
       "Punta Gorda residents trust Soarin Handyman Services for quality home repairs and handyman projects. We bring professional tools, experience, and attention to detail to every project in Punta Gorda.",
-    image: "/images/hurricane Shutter Repair/TN.jfif",
+    image: "/images/hurricane-shutter-repair/TN.jpg",
     features: [
       "Professional service for Punta Gorda waterfront & inland homes",
       "Specialized fixture and hardware replacements",
@@ -410,7 +409,7 @@ export const serviceAreasData: ServiceAreaDetail[] = [
     name: "Sanibel",
     description:
       "Sanibel homeowners rely on Soarin Handyman Services for professional repairs and improvements. We understand the unique needs of island living and provide handyman services that keep your Sanibel home in excellent condition.",
-    image: "/images/ceiling-fans/TN.jfif",
+    image: "/images/ceiling-fans/TN.jpg",
     features: [
       "Experienced with Sanibel island property needs",
       "Moisture and salt-air resistant sealing & caulking",
