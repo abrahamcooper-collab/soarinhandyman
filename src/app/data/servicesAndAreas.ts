@@ -344,7 +344,7 @@ export const serviceAreasData: ServiceAreaDetail[] = [
     name: "Cape Coral",
     description:
       "Cape Coral homeowners trust Soarin Handyman Services for professional home repairs, installations, and improvements. From ceiling fan installation to drywall repair, we help keep your Cape Coral home looking and functioning at its best.",
-    image: "/images/outdoor-miscellaneous-work/TN.jpg",
+    image: "/images/service-areas/cape-coral.png",
     features: [
       "Fast response for Cape Coral neighborhoods",
       "Expertise in canal-home and coastal property repairs",
@@ -357,7 +357,7 @@ export const serviceAreasData: ServiceAreaDetail[] = [
     name: "Fort Myers",
     description:
       "Fort Myers residents rely on Soarin Handyman Services for quality home repairs and improvements throughout the area. Whether you need faucet replacement, caulking, or general handyman work, we bring professional workmanship to every Fort Myers project.",
-    image: "/images/painting/TN.jpg",
+    image: "/images/service-areas/fort-myers.png",
     features: [
       "Reliable service across historic and modern Fort Myers homes",
       "Comprehensive indoor & outdoor maintenance",
@@ -370,7 +370,7 @@ export const serviceAreasData: ServiceAreaDetail[] = [
     name: "Naples",
     description:
       "Naples homeowners deserve meticulous, professional handyman services. Soarin Handyman Services provides repairs, installations, and home improvement projects throughout Naples with the attention to detail your home deserves.",
-    image: "/images/bathroom/TN.jpg",
+    image: "/images/service-areas/naples.png",
     features: [
       "Meticulous attention to high-end home details",
       "Careful property protection during all repairs",
@@ -383,7 +383,7 @@ export const serviceAreasData: ServiceAreaDetail[] = [
     name: "Port Charlotte",
     description:
       "Port Charlotte homeowners count on Soarin Handyman Services for reliable home repairs and improvements. From drywall repair to ceiling fan installation, we serve Port Charlotte with professional workmanship and clear communication.",
-    image: "/images/drywall-repairs/TN.jpg",
+    image: "/images/service-areas/port-charlotte.png",
     features: [
       "Dependable home maintenance for Port Charlotte properties",
       "Drywall, fan, faucet, and grab bar expertise",
@@ -396,7 +396,7 @@ export const serviceAreasData: ServiceAreaDetail[] = [
     name: "Punta Gorda",
     description:
       "Punta Gorda residents trust Soarin Handyman Services for quality home repairs and handyman projects. We bring professional tools, experience, and attention to detail to every project in Punta Gorda.",
-    image: "/images/hurricane-shutter-repair/TN.jpg",
+    image: "/images/service-areas/punta-gorda.png",
     features: [
       "Professional service for Punta Gorda waterfront & inland homes",
       "Specialized fixture and hardware replacements",
@@ -409,7 +409,7 @@ export const serviceAreasData: ServiceAreaDetail[] = [
     name: "Sanibel",
     description:
       "Sanibel homeowners rely on Soarin Handyman Services for professional repairs and improvements. We understand the unique needs of island living and provide handyman services that keep your Sanibel home in excellent condition.",
-    image: "/images/ceiling-fans/TN.jpg",
+    image: "/images/service-areas/sanibel.png",
     features: [
       "Experienced with Sanibel island property needs",
       "Moisture and salt-air resistant sealing & caulking",

@@ -29,10 +29,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Col 1: Brand Info */}
           <div>
-            <a
-              href={googleMapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/"
               className="group block mb-4"
             >
               <Image
@@ -42,7 +40,7 @@ export default function Footer() {
                 height={75}
                 className="h-14 sm:h-16 w-auto object-contain"
               />
-            </a>
+            </Link>
             <p className="text-stone-400 text-sm leading-relaxed mb-4">
               Professional home repairs, installations, and improvements throughout
               Southwest Florida.

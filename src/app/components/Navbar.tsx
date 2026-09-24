@@ -29,7 +29,11 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 flex items-center justify-between">
         {/* Logo Image & Text */}
-        <Link href="/" className="flex items-center gap-3 z-10 group">
+        <Link
+          href="/"
+          onClick={() => setMobileMenuOpen(false)}
+          className="flex items-center gap-3 z-10 group"
+        >
           <Image
             src="/logo.png"
             alt="Soarin Handyman Services, LLC"
@@ -202,7 +206,7 @@ export default function Navbar() {
 
         {/* Right Side Buttons */}
         <div className="flex items-center gap-4">
-          <Link
+          <a
             href="tel:2392223111"
             className={`hidden md:inline-flex items-center gap-2 text-sm font-medium transition-colors ${
               scrolled ? "text-[#2C2C2A]" : "text-white"
@@ -222,7 +226,7 @@ export default function Navbar() {
               <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
             </svg>
             (239) 222-3111
-          </Link>
+          </a>
 
           <Link
             href="/#estimate-form"
@@ -410,12 +414,12 @@ export default function Navbar() {
           </Link>
 
           <div className="pt-4 border-t border-white/10 flex flex-col gap-3">
-            <Link
+            <a
               href="tel:2392223111"
               className="flex items-center justify-center gap-2 py-3 border border-white/20 text-white rounded-md text-sm font-medium"
             >
               📞 Call (239) 222-3111
-            </Link>
+            </a>
             <Link
               href="/#estimate-form"
               onClick={() => setMobileMenuOpen(false)}
