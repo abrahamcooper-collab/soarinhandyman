@@ -151,13 +151,13 @@ export const servicesData: ServiceDetail[] = [
       "/images/hurricane-shutter-repair/22e60ccd6ad0873fd0194a3f1ac387801282056b-1.jpg",
       "/images/hurricane-shutter-repair/7cd36c60b02c058e641df5ff0b9d99923f1170e4-1.jpg",
     ],
-    beforeAfter: [
-      {
-        before: "/images/hurricane-shutter-repair/beforeafter/before.jpg",
-        after: "/images/hurricane-shutter-repair/beforeafter/after.jpg",
-        label: "Hurricane Shutter Track Repair & Alignment",
-      },
-    ],
+    // beforeAfter: [
+    //   {
+    //     before: "/images/hurricane-shutter-repair/beforeafter/before.jpg",
+    //     after: "/images/hurricane-shutter-repair/beforeafter/after.jpg",
+    //     label: "Hurricane Shutter Track Repair & Alignment",
+    //   },
+    // ],
     benefits: [
       "Ensures reliable storm protection when severe weather approaches",
       "Smooth motorized or manual track operation",
@@ -202,6 +202,8 @@ export const servicesData: ServiceDetail[] = [
     gallery: [
       "/images/outdoor-miscellaneous-work/984027b5d6755a58e07852bfb0408ac960f364f1-1.jpg",
       "/images/outdoor-miscellaneous-work/982d766551a353ab452ccd3ec604878432db3843-1.jpg",
+      "/images/outdoor-miscellaneous-work/1.jpg",
+      "/images/outdoor-miscellaneous-work/2.jpg",
       "/images/outdoor-miscellaneous-work/f4ea58a60548615096cfb3a9c932f3f026fe9c98-1.jpg",
     ],
     beforeAfter: [

@@ -349,7 +349,7 @@ export default function Home() {
             <div className="relative">
               <div className="relative h-[400px] sm:h-[480px] lg:h-[500px] w-full overflow-hidden rounded-sm">
                 <Image
-                  src="/images/outdoor-miscellaneous-work/984027b5d6755a58e07852bfb0408ac960f364f1-1.jpg"
+                  src="/images/about.png"
                   alt="Soarin Handyman Services owner ready for home repair projects"
                   fill
                   className="object-cover object-top"
